@@ -14,8 +14,8 @@ public class PlayerMovementy : OrbitSun
 	}
 	
 	// Update is called once per frame
-	new void Update () {
-        base.Update();
+	new void FixedUpdate () {
+        base.FixedUpdate();
         Vector3 playerMovement = new Vector3();
 
         tMulti -= 0.05f;

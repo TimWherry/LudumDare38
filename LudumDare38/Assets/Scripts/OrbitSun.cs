@@ -17,9 +17,9 @@ public class OrbitSun : MonoBehaviour
     }
 
     // Update is called once per frame
-    protected void Update()
+    protected void FixedUpdate()
     {
-        t += Time.deltaTime * tMulti;
+        t += Time.fixedDeltaTime * tMulti;
         if(t >= Mathf.PI * 2.0f)
         {
             t = 0.0f;
