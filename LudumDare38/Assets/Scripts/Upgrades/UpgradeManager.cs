@@ -9,6 +9,9 @@ public class UpgradeManager : MonoBehaviour {
     public Camera m_Camera;
     public GameObject m_ResourceTextAnchor;
     public GameObject m_UpgradeButtonAnchor;
+    public GameObject m_UpgradeMenu;
+    public GameObject m_Sun;
+    public PlayerMovementy m_PlayerMovement;
 
     private int m_PlayerSizeIncrease = 0;
     private int m_PlayerOrbitIncrease = 0;
@@ -29,7 +32,11 @@ public class UpgradeManager : MonoBehaviour {
         m_PlayerOrbitIncrease++;
         m_Player.GetComponent<OrbitSun>().m_OrbitSize *= m_ScaleChange;
         m_ResourceTextAnchor.transform.position = new Vector3(m_ResourceTextAnchor.transform.position.x * m_ScaleChange, m_ResourceTextAnchor.transform.position.y * m_ScaleChange, m_ResourceTextAnchor.transform.position.z);
+        m_ResourceTextAnchor.transform.GetChild(0).localScale = m_ResourceTextAnchor.transform.GetChild(0).localScale * m_ScaleChange;
         m_UpgradeButtonAnchor.transform.position = new Vector3(m_UpgradeButtonAnchor.transform.position.x * m_ScaleChange, m_UpgradeButtonAnchor.transform.position.y * m_ScaleChange, m_UpgradeButtonAnchor.transform.position.z);
+        m_UpgradeButtonAnchor.transform.GetChild(0).localScale = m_UpgradeButtonAnchor.transform.GetChild(0).localScale * m_ScaleChange;
+        m_UpgradeButtonAnchor.transform.GetChild(0).localPosition = m_UpgradeButtonAnchor.transform.GetChild(0).localPosition * m_ScaleChange;
+        m_UpgradeMenu.transform.localScale = m_UpgradeMenu.transform.localScale * m_ScaleChange;
         m_Camera.orthographicSize *= m_ScaleChange;
         m_SpawnResources.m_Scale = getScaleFromOrbit();
         m_SpawnMeteors.m_Scale = getScaleFromOrbit();
@@ -39,6 +46,8 @@ public class UpgradeManager : MonoBehaviour {
     {
         m_PlayerSizeIncrease++;
         m_Player.GetComponent<Scaler>().Scale(m_Player.GetComponent<Scaler>().m_Scale * m_ScaleChange);
+        m_Sun.transform.localScale = m_Sun.transform.localScale * m_ScaleChange;
+        m_PlayerMovement.m_PlayerMovementMax *= m_ScaleChange;
     }
 
     private float getScaleFromOrbit()

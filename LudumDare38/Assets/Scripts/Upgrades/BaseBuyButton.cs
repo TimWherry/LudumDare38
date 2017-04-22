@@ -26,10 +26,14 @@ public abstract class BaseBuyButton : MonoBehaviour {
     private void CalcNextAmount()
     {
         resourcesNeeded = m_BaseCost;
+        float needed = resourcesNeeded;
         for (int i = 0; i < amountPurchased; ++i)
         {
-            resourcesNeeded = (int)(resourcesNeeded * m_ResourceScale);
+            needed = resourcesNeeded * m_ResourceScale;
         }
+
+        resourcesNeeded = Mathf.CeilToInt(needed);
+
     }
 
     // Update is called once per frame

@@ -34,20 +34,20 @@ public class PauseManager : MonoBehaviour
     {
         foreach (Pausable pause in m_Pausables)
         {
-            pause.Pause();
+            if (pause != null)
+            {
+                pause.Pause();
+            }
         }
     }
     public void Resume()
     {
         foreach (Pausable pause in m_Pausables)
         {
-            pause.Resume();
+            if (pause != null)
+            {
+                pause.Resume();
+            }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
