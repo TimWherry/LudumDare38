@@ -15,37 +15,40 @@ public class PlayerMovementy : OrbitSun
 	
 	// Update is called once per frame
 	new void FixedUpdate () {
-        base.FixedUpdate();
-        Vector3 playerMovement = new Vector3();
+        if (!isPaused)
+        {
+            base.FixedUpdate();
+            Vector3 playerMovement = new Vector3();
 
-        tMulti -= 0.05f;
-        if (Input.GetKey(KeyCode.A))
-        {
-            playerMovement.x -= m_PlayerMovementPower;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            playerMovement.x += m_PlayerMovementPower;
-        }
-        if (Input.GetKey(KeyCode.W))
-        {
-            playerMovement.y += m_PlayerMovementPower;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            playerMovement.y -= m_PlayerMovementPower;
-        }
-        if (Input.GetKey(KeyCode.Space))
-        {
-            tMulti += 0.1f;
-        }
-        tMulti = Mathf.Clamp(tMulti, 1.0f, 2.0f);
+            tMulti -= 0.05f;
+            if (Input.GetKey(KeyCode.A))
+            {
+                playerMovement.x -= m_PlayerMovementPower;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                playerMovement.x += m_PlayerMovementPower;
+            }
+            if (Input.GetKey(KeyCode.W))
+            {
+                playerMovement.y += m_PlayerMovementPower;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                playerMovement.y -= m_PlayerMovementPower;
+            }
+            if (Input.GetKey(KeyCode.Space))
+            {
+                tMulti += 0.1f;
+            }
+            tMulti = Mathf.Clamp(tMulti, 1.0f, 2.0f);
 
 
-        playerMovementHistory += playerMovement;
-        playerMovementHistory.x = Mathf.Clamp(playerMovementHistory.x, -m_PlayerMovementMax, m_PlayerMovementMax);
-        playerMovementHistory.y = Mathf.Clamp(playerMovementHistory.y, -m_PlayerMovementMax, m_PlayerMovementMax);
+            playerMovementHistory += playerMovement;
+            playerMovementHistory.x = Mathf.Clamp(playerMovementHistory.x, -m_PlayerMovementMax, m_PlayerMovementMax);
+            playerMovementHistory.y = Mathf.Clamp(playerMovementHistory.y, -m_PlayerMovementMax, m_PlayerMovementMax);
 
-        transform.Translate(playerMovementHistory);
+            transform.Translate(playerMovementHistory);
+        }
     }
 }

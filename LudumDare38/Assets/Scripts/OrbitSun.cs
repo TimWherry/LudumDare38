@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OrbitSun : MonoBehaviour
+public class OrbitSun : Pausable
 {
     public GameObject m_CenterObject;
     public float m_OrbitSize = 5.0f;//sure thats good
@@ -19,14 +19,17 @@ public class OrbitSun : MonoBehaviour
     // Update is called once per frame
     protected void FixedUpdate()
     {
-        t += Time.fixedDeltaTime * tMulti;
-        if(t >= Mathf.PI * 2.0f)
+        if (!isPaused)
         {
-            t = 0.0f;
+            t += Time.fixedDeltaTime * tMulti;
+            if (t >= Mathf.PI * 2.0f)
+            {
+                t = 0.0f;
+            }
+
+            transform.Translate(-transform.position);
+
+            transform.Translate(new Vector3(m_OrbitSize * Mathf.Cos(t), 0.5f * m_OrbitSize * Mathf.Sin(t)));
         }
-
-        transform.Translate(-transform.position);
-
-        transform.Translate(new Vector3(m_OrbitSize * Mathf.Cos(t), 0.5f * m_OrbitSize * Mathf.Sin(t)));
     }
 }

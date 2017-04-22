@@ -7,7 +7,7 @@ public class Animation : MonoBehaviour
     public Sprite[] m_Sprites;
     private int index = 0;
 
-    private SpriteRenderer renderer;
+    private new SpriteRenderer renderer;
 
     public float m_TotalAnimationTime = 0.0f;
     private float timer = 0.0f;

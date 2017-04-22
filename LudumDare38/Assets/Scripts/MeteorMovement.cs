@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeteorMovement : MonoBehaviour
+public class MeteorMovement : Pausable
 {
     public float m_LifeTime = 7.5f;
     public float m_MinSpeed = 4.5f;
@@ -14,10 +14,13 @@ public class MeteorMovement : MonoBehaviour
 
     private void Update()
     {
-        m_LifeTime -= Time.deltaTime;
-        if(m_LifeTime <= 0.0f)
+        if (!isPaused)
         {
-            Destroy(gameObject);
+            m_LifeTime -= Time.deltaTime;
+            if (m_LifeTime <= 0.0f)
+            {
+                Kill();
+            }
         }
     }
 
@@ -29,10 +32,24 @@ public class MeteorMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag.Equals("Player"))
+        if (!isPaused)
         {
-            Debug.Log("Player was hit!");
+            if (collision.gameObject.tag.Equals("Player"))
+            {
+                collision.gameObject.GetComponent<PlayerResources>().removeResources(Resource.eResource.Water, 2);
+                collision.gameObject.GetComponent<PlayerResources>().removeResources(Resource.eResource.Soil, 2);
+            }
+            if (collision.gameObject.tag.Equals("Resource"))
+            {
+                Destroy(collision.gameObject);
+            }
+            Kill();
         }
+    }
+
+    private void Kill()
+    {
+        PauseManager.getInstance().RemovePausable(this);
         Destroy(gameObject);
     }
 }

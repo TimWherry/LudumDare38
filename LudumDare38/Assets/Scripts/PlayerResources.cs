@@ -21,9 +21,23 @@ public class PlayerResources : MonoBehaviour
         }
     }
 
+    public int getResourceAmount(Resource.eResource resource)
+    {
+        return m_ResourceCount[(int)resource];
+    }
+
+    public void removeResources(Resource.eResource resource, int amount)
+    {
+        m_ResourceCount[(int)resource] -= amount;
+        if(m_ResourceCount[(int)resource] <= 0)
+        {
+            m_ResourceCount[(int)resource] = 0;
+        }
+    }
+
+
     public void incrementResource(Resource.eResource resource)
     {
         m_ResourceCount[(int)resource]++;
-        Debug.Log(resource.ToString() + " = " + m_ResourceCount[(int)resource]);
     }
 }

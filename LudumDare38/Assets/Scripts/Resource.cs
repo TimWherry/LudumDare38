@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Resource : MonoBehaviour
+public class Resource : Pausable
 {
     public enum eResource
     {
@@ -13,6 +13,7 @@ public class Resource : MonoBehaviour
     }
     public Sprite[] m_ResourceSprites;
     public float m_Speed = 2.5f;
+    public float m_Lifetime = 15.0f;
     private eResource resourceType;
 
     public void rollRandomDirection()
@@ -27,7 +28,19 @@ public class Resource : MonoBehaviour
         resourceType = (eResource)Random.Range(0, (int)eResource.Max);
         if ((int)resourceType > -1 && (int)resourceType < m_ResourceSprites.Length)
         {
-            GetComponent<SpriteRenderer>().sprite = m_ResourceSprites[(int)resourceType];
+            GetComponent<Scaler>().m_SpriteHolder.GetComponent<SpriteRenderer>().sprite = m_ResourceSprites[(int)resourceType];
+        }
+    }
+
+    private void Update()
+    {
+        if (!isPaused)
+        {
+            m_Lifetime -= Time.deltaTime;
+            if (m_Lifetime <= 0.0f)
+            {
+                Kill();
+            }
         }
     }
 
@@ -51,11 +64,20 @@ public class Resource : MonoBehaviour
 
     private void OnCollision(Collision collision)
     {
-        if(collision.gameObject.tag.Equals("Player"))
+        if (!isPaused)
         {
-            collision.gameObject.GetComponent<PlayerResources>().incrementResource(resourceType);
-            Physics.IgnoreCollision(collision.collider, GetComponent<Collider>());
-            Destroy(gameObject);
+            if (collision.gameObject.tag.Equals("Player"))
+            {
+                collision.gameObject.GetComponent<PlayerResources>().incrementResource(resourceType);
+                Physics.IgnoreCollision(collision.collider, GetComponent<Collider>());
+                Kill();
+            }
         }
+    }
+
+    private void Kill()
+    {
+        PauseManager.getInstance().RemovePausable(this);
+        Destroy(gameObject);
     }
 }
