@@ -54,6 +54,7 @@ public class UpgradeManager : MonoBehaviour {
         m_Player.GetComponent<Scaler>().Scale(m_Player.GetComponent<Scaler>().m_Scale * m_ScaleChange);
         m_Sun.transform.localScale = m_Sun.transform.localScale * m_ScaleChange;
         m_PlayerMovement.m_PlayerMovementMax *= m_ScaleChange;
+        m_PlayerMovement.m_PlayerMovementPower *= m_ScaleChange;
     }
 
     private float getScaleFromOrbit()

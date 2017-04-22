@@ -46,7 +46,7 @@ public abstract class BaseBuyButton : MonoBehaviour {
             Collider2D col = Physics2D.OverlapPoint(new Vector2(mousePos.x, mousePos.y));
             if (col != null)
             {
-                if (col.tag.Equals("BuyButton"))
+                if (col.tag.Equals("BuyButton") && col.gameObject == gameObject)
                 {
                     if (m_PlayerResources.getResourceAmount(m_ResourceNeeded) >= resourcesNeeded)
                     {

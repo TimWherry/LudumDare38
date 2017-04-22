@@ -8,5 +8,6 @@ public class BuyOrbit : BaseBuyButton
     public override void PurchaseUpgrade()
     {
         m_UpgradeManager.increaseOrbit();
+        Debug.Log("here");
     }
 }

@@ -43,7 +43,7 @@ public class SpawnMeteors : Pausable
     private void rollRandomMeteor()
     {
         float angle = Random.Range(0.0f, Mathf.PI * 2.0f);
-        GameObject newMeteor = GameObject.Instantiate(m_MeteorPrefab, new Vector3(Mathf.Cos(angle), Mathf.Sin(angle)) * m_SpawnDistance, Quaternion.identity);
+        GameObject newMeteor = GameObject.Instantiate(m_MeteorPrefab, new Vector3(Mathf.Cos(angle), Mathf.Sin(angle)) * m_SpawnDistance * m_Scale, Quaternion.identity);
         newMeteor.GetComponent<MeteorMovement>().sendInDirection(Vector3.zero - newMeteor.transform.position);
         newMeteor.GetComponent<Scaler>().m_Scale = m_Scale;
         Vector3 velocity = newMeteor.GetComponent<Rigidbody>().velocity;
