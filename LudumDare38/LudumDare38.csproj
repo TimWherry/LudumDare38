@@ -76,18 +76,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Animation.cs" />
+    <Compile Include="Assets\Scripts\ExitGame.cs" />
     <Compile Include="Assets\Scripts\Help\CloseHelp.cs" />
     <Compile Include="Assets\Scripts\Help\HelpMenu.cs" />
     <Compile Include="Assets\Scripts\Help\OpenHelp.cs" />
     <Compile Include="Assets\Scripts\Movement\BullyCollision.cs" />
     <Compile Include="Assets\Scripts\Movement\MeteorMovement.cs" />
     <Compile Include="Assets\Scripts\Movement\OrbitSun.cs" />
+    <Compile Include="Assets\Scripts\Movement\StarMovement.cs" />
     <Compile Include="Assets\Scripts\Pausable.cs" />
     <Compile Include="Assets\Scripts\PauseManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovementy.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerResources.cs" />
     <Compile Include="Assets\Scripts\Resource.cs" />
     <Compile Include="Assets\Scripts\Scaler.cs" />
+    <Compile Include="Assets\Scripts\Spawners\SpawnBackgroundStars.cs" />
     <Compile Include="Assets\Scripts\Spawners\SpawnMeteors.cs" />
     <Compile Include="Assets\Scripts\Spawners\SpawnResources.cs" />
     <Compile Include="Assets\Scripts\Upgrades\BaseBuyButton.cs" />

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MeteorMovement : Pausable
 {
+    public GameObject m_ParticleSystem;
     public float m_LifeTime = 7.5f;
     public float m_MinSpeed = 4.5f;
     public float m_MaxSpeed = 6.5f;
@@ -38,13 +39,22 @@ public class MeteorMovement : Pausable
             {
                 collision.gameObject.GetComponent<PlayerResources>().removeResources(Resource.eResource.Water, 2);
                 collision.gameObject.GetComponent<PlayerResources>().removeResources(Resource.eResource.Soil, 2);
+                HitWorld(collision.contacts[0].normal);
             }
-            if (collision.gameObject.tag.Equals("Resource"))
+            else if (collision.gameObject.tag.Equals("Resource"))
             {
-                Destroy(collision.gameObject);
+                collision.gameObject.GetComponent<Resource>().Kill();
             }
+            HitWorld(collision.contacts[0].normal);
             Kill();
         }
+    }
+
+    private void HitWorld(Vector3 hitDirection)
+    {
+        float angle = Vector3.Angle(new Vector3(hitDirection.x, hitDirection.y, 0.0f), Vector3.right);
+        GameObject particles = GameObject.Instantiate(m_ParticleSystem, transform.position, Quaternion.AngleAxis(180.0f, Vector3.right));
+        Destroy(particles, 1.5f);
     }
 
     private void Kill()

@@ -12,6 +12,7 @@ public class Resource : Pausable
         Max = 2,
     }
     public Sprite[] m_ResourceSprites;
+    public GameObject[] m_ParticleSystems;
     public float m_Speed = 2.5f;
     public float m_Lifetime = 15.0f;
     private eResource resourceType;
@@ -75,8 +76,10 @@ public class Resource : Pausable
         }
     }
 
-    private void Kill()
+    public void Kill()
     {
+        GameObject system = GameObject.Instantiate(m_ParticleSystems[(int)resourceType], transform.position, Quaternion.AngleAxis(180, Vector3.right));
+        Destroy(system, 2.0f);
         PauseManager.getInstance().RemovePausable(this);
         Destroy(gameObject);
     }

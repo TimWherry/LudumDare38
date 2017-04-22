@@ -5,8 +5,8 @@ using UnityEngine;
 public class OrbitSun : Pausable
 {
     public GameObject m_CenterObject;
-    public float m_OrbitSize = 5.0f;//sure thats good
-    private float t = 0.0f;
+    public float m_OrbitSize = 5.0f;
+    protected float t = 0.0f;
     protected float tMulti = 1.0f;
 
     // Use this for initialization
@@ -29,7 +29,17 @@ public class OrbitSun : Pausable
 
             transform.Translate(-transform.position);
 
-            transform.Translate(new Vector3(m_OrbitSize * Mathf.Cos(t), 0.5f * m_OrbitSize * Mathf.Sin(t)));
+            transform.Translate(new Vector3(getXPosition(t), getYPosition(t)));
         }
+    }
+
+    protected float getYPosition(float _t)
+    {
+        return 0.5f * m_OrbitSize * Mathf.Sin(_t);
+    }
+
+    protected float getXPosition(float _t)
+    {
+        return m_OrbitSize * Mathf.Cos(_t);
     }
 }

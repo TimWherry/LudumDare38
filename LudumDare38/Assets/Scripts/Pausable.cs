@@ -5,24 +5,26 @@ using UnityEngine;
 public class Pausable : MonoBehaviour
 {
     private Vector3 pauseVelocity;
+    [SerializeField]
     protected bool isPaused;
 
     public void Awake()
     {
+        if(isPaused)
+        {
+            Pause();
+        }
         PauseManager.getInstance().AddPausable(this);
     }
 
     public void Pause()
     {
         isPaused = true;
-        if (gameObject != null)
+        Rigidbody body = GetComponent<Rigidbody>();
+        if (body != null)
         {
-            Rigidbody body = GetComponent<Rigidbody>();
-            if (body != null)
-            {
-                pauseVelocity = body.velocity;
-                body.velocity = Vector3.zero;
-            }
+            pauseVelocity = body.velocity;
+            body.velocity = Vector3.zero;
         }
     }
 

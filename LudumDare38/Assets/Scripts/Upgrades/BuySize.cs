@@ -8,6 +8,5 @@ public class BuySize : BaseBuyButton
     public override void PurchaseUpgrade()
     {
         m_UpgradeManager.increaseSize();
-        Debug.Log("here");
     }
 }

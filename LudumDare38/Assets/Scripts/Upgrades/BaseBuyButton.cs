@@ -8,6 +8,7 @@ public abstract class BaseBuyButton : MonoBehaviour {
 
     public PlayerResources m_PlayerResources;
     public UpgradeManager m_UpgradeManager;
+    public BaseBuyButton m_OtherButton;
 
     public float m_ResourceScale = 1.2f;
     public int m_BaseCost = 3;
@@ -19,7 +20,14 @@ public abstract class BaseBuyButton : MonoBehaviour {
     {
         amountPurchased = amount;
         CalcNextAmount();
-        m_UpgradeCost.text = resourcesNeeded + " " + m_ResourceNeeded.ToString();
+        if (Mathf.Abs(m_OtherButton.amountPurchased - amountPurchased) >= 2)
+        {
+            m_UpgradeCost.text = "Can't Upgrade It Too Much Faster Than " + m_OtherButton.name;
+        }
+        else
+        {
+            m_UpgradeCost.text = resourcesNeeded + " " + m_ResourceNeeded.ToString();
+        }
         m_UpgradeAmount.text = "" + amountPurchased;
     }
 
@@ -48,7 +56,7 @@ public abstract class BaseBuyButton : MonoBehaviour {
             {
                 if (col.tag.Equals("BuyButton") && col.gameObject == gameObject)
                 {
-                    if (m_PlayerResources.getResourceAmount(m_ResourceNeeded) >= resourcesNeeded)
+                    if (m_PlayerResources.getResourceAmount(m_ResourceNeeded) >= resourcesNeeded && Mathf.Abs(m_OtherButton.amountPurchased - amountPurchased) < 2)
                     {
                         m_PlayerResources.removeResources(m_ResourceNeeded, resourcesNeeded);
                         PurchaseUpgrade();
