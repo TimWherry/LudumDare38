@@ -16,10 +16,10 @@ public class Resource : Pausable
     public float m_Lifetime = 15.0f;
     private eResource resourceType;
 
-    public void rollRandomDirection()
+    public void rollRandomDirection(float scale)
     {
         Rigidbody body = GetComponent<Rigidbody>();
-        body.velocity = new Vector3(Random.insideUnitCircle.x, Random.insideUnitCircle.y) * m_Speed;
+        body.velocity = new Vector3(Random.insideUnitCircle.x, Random.insideUnitCircle.y) * m_Speed * scale;
     }
 
     // Use this for initialization

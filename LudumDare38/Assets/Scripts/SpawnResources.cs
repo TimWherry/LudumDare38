@@ -38,7 +38,7 @@ public class SpawnResources : Pausable
     {
         GameObject newResource = GameObject.Instantiate(m_ResourcePrefab, transform.position, Quaternion.identity);
         // send it in random direction
-        newResource.GetComponent<Resource>().rollRandomDirection();
         newResource.GetComponent<Scaler>().m_Scale = m_Scale;
+        newResource.GetComponent<Resource>().rollRandomDirection(m_Scale);
     }
 }

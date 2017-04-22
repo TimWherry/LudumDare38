@@ -12,6 +12,8 @@ public class UpgradeManager : MonoBehaviour {
     public GameObject m_UpgradeMenu;
     public GameObject m_Sun;
     public PlayerMovementy m_PlayerMovement;
+    public GameObject m_HelpButtonAnchor;
+    public GameObject m_HelpMenu;
 
     private int m_PlayerSizeIncrease = 0;
     private int m_PlayerOrbitIncrease = 0;
@@ -36,7 +38,11 @@ public class UpgradeManager : MonoBehaviour {
         m_UpgradeButtonAnchor.transform.position = new Vector3(m_UpgradeButtonAnchor.transform.position.x * m_ScaleChange, m_UpgradeButtonAnchor.transform.position.y * m_ScaleChange, m_UpgradeButtonAnchor.transform.position.z);
         m_UpgradeButtonAnchor.transform.GetChild(0).localScale = m_UpgradeButtonAnchor.transform.GetChild(0).localScale * m_ScaleChange;
         m_UpgradeButtonAnchor.transform.GetChild(0).localPosition = m_UpgradeButtonAnchor.transform.GetChild(0).localPosition * m_ScaleChange;
+        m_HelpButtonAnchor.transform.position = new Vector3(m_HelpButtonAnchor.transform.position.x * m_ScaleChange, m_HelpButtonAnchor.transform.position.y * m_ScaleChange, m_HelpButtonAnchor.transform.position.z);
+        m_HelpButtonAnchor.transform.GetChild(0).localScale = m_HelpButtonAnchor.transform.GetChild(0).localScale * m_ScaleChange;
+        m_HelpButtonAnchor.transform.GetChild(0).localPosition = m_HelpButtonAnchor.transform.GetChild(0).localPosition * m_ScaleChange;
         m_UpgradeMenu.transform.localScale = m_UpgradeMenu.transform.localScale * m_ScaleChange;
+        m_HelpMenu.transform.localScale = m_HelpMenu.transform.localScale * m_ScaleChange;
         m_Camera.orthographicSize *= m_ScaleChange;
         m_SpawnResources.m_Scale = getScaleFromOrbit();
         m_SpawnMeteors.m_Scale = getScaleFromOrbit();

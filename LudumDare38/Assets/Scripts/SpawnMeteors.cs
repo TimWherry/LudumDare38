@@ -49,6 +49,6 @@ public class SpawnMeteors : Pausable
         Vector3 velocity = newMeteor.GetComponent<Rigidbody>().velocity;
         newMeteor.GetComponent<Rigidbody>().velocity = Vector3.zero;
         newMeteor.transform.Rotate(new Vector3(0.0f, 0.0f, Random.Range(-10.0f, 10.0f)));
-        newMeteor.GetComponent<Rigidbody>().velocity = newMeteor.transform.up * velocity.magnitude;
+        newMeteor.GetComponent<Rigidbody>().velocity = newMeteor.transform.up * velocity.magnitude * m_Scale;
     }
 }

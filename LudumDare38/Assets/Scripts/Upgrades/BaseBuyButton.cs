@@ -29,7 +29,7 @@ public abstract class BaseBuyButton : MonoBehaviour {
         float needed = resourcesNeeded;
         for (int i = 0; i < amountPurchased; ++i)
         {
-            needed = resourcesNeeded * m_ResourceScale;
+            needed = needed * m_ResourceScale;
         }
 
         resourcesNeeded = Mathf.CeilToInt(needed);
