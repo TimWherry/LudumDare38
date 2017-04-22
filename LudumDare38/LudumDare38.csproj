@@ -100,6 +100,7 @@
     <Compile Include="Assets\Scripts\Upgrades\UpgradeButton.cs" />
     <Compile Include="Assets\Scripts\Upgrades\UpgradeManager.cs" />
     <Compile Include="Assets\Scripts\Upgrades\UpgradeMenu.cs" />
+    <Compile Include="Assets\Scripts\menu\StartGame.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

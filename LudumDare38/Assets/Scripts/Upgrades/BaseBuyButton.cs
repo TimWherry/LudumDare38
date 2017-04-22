@@ -20,14 +20,6 @@ public abstract class BaseBuyButton : MonoBehaviour {
     {
         amountPurchased = amount;
         CalcNextAmount();
-        if (Mathf.Abs(m_OtherButton.amountPurchased - amountPurchased) >= 2)
-        {
-            m_UpgradeCost.text = "Can't Upgrade It Too Much Faster Than " + m_OtherButton.name;
-        }
-        else
-        {
-            m_UpgradeCost.text = resourcesNeeded + " " + m_ResourceNeeded.ToString();
-        }
         m_UpgradeAmount.text = "" + amountPurchased;
     }
 
@@ -56,7 +48,7 @@ public abstract class BaseBuyButton : MonoBehaviour {
             {
                 if (col.tag.Equals("BuyButton") && col.gameObject == gameObject)
                 {
-                    if (m_PlayerResources.getResourceAmount(m_ResourceNeeded) >= resourcesNeeded && Mathf.Abs(m_OtherButton.amountPurchased - amountPurchased) < 2)
+                    if (m_PlayerResources.getResourceAmount(m_ResourceNeeded) >= resourcesNeeded && amountPurchased - m_OtherButton.amountPurchased < 2)
                     {
                         m_PlayerResources.removeResources(m_ResourceNeeded, resourcesNeeded);
                         PurchaseUpgrade();
@@ -64,6 +56,14 @@ public abstract class BaseBuyButton : MonoBehaviour {
                     }
                 }
             }
+        }
+        if (amountPurchased - m_OtherButton.amountPurchased >= 2)
+        {
+            m_UpgradeCost.text = "Can't Upgrade It Too Much Faster Than " + m_OtherButton.name;
+        }
+        else
+        {
+            m_UpgradeCost.text = resourcesNeeded + " " + m_ResourceNeeded.ToString();
         }
     }
 

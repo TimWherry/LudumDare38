@@ -24,8 +24,11 @@ public class OpenHelp : MonoBehaviour
             {
                 if (col.gameObject == gameObject)
                 {
-                    m_HelpMenu.SetActive(true);
-                    PauseManager.getInstance().Pause();
+                    if (!PauseManager.getInstance().isGameEnded())
+                    {
+                        m_HelpMenu.SetActive(true);
+                        PauseManager.getInstance().Pause();
+                    }
                 }
             }
         }

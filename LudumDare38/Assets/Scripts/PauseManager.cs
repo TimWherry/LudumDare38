@@ -8,6 +8,8 @@ public class PauseManager : MonoBehaviour
 
     private static PauseManager m_Instance = null;
 
+    private bool gameEnded = false;
+
     public static PauseManager getInstance()
     {
         if(m_Instance == null)
@@ -40,13 +42,39 @@ public class PauseManager : MonoBehaviour
             }
         }
     }
+
+    public void EndGame()
+    {
+        gameEnded = true;
+        Pause();
+    }
+
+    public bool isGameEnded()
+    {
+        return gameEnded;
+    }
+
     public void Resume()
     {
-        foreach (Pausable pause in m_Pausables)
+        if (!gameEnded)
         {
-            if (pause != null)
+            foreach (Pausable pause in m_Pausables)
             {
-                pause.Resume();
+                if (pause != null)
+                {
+                    pause.Resume();
+                }
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if(gameEnded)
+        {
+            if(Input.anyKey)
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
             }
         }
     }

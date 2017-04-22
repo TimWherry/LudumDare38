@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BullyCollision : MonoBehaviour
 {
+    public GameObject m_Particles;
     private SphereCollider sphereCollider;
     // Use this for initialization
     void Start()
@@ -23,6 +24,8 @@ public class BullyCollision : MonoBehaviour
                 if(otherCollider.radius > sphereCollider.radius)
                 {
                     PauseManager.getInstance().RemovePausable(GetComponent<OrbitSun>());
+                    GameObject particles = GameObject.Instantiate(m_Particles, transform.position, Quaternion.AngleAxis(180, Vector3.right));
+                    Destroy(particles, 2.0f);
                     Destroy(gameObject);
                 }
                 float distanceApart = Vector3.Distance(c.gameObject.transform.position, transform.position);

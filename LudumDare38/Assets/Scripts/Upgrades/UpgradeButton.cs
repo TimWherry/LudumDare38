@@ -14,6 +14,7 @@ public class UpgradeButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(Input.GetMouseButtonDown(0))
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -23,7 +24,10 @@ public class UpgradeButton : MonoBehaviour
             {
                 if(col.tag.Equals("UpgradeButton"))
                 {
-                    m_UpgradeMenu.OpenMenu();
+                    if (!PauseManager.getInstance().isGameEnded())
+                    {
+                        m_UpgradeMenu.OpenMenu();
+                    }
                 }
             }
         }

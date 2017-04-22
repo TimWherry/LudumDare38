@@ -10,6 +10,7 @@ public class PlayerMovementy : OrbitSun
     public int m_LineSegments = 10;
     public float m_LineTStep = 0.15f;
     private Vector3 playerMovementHistory;
+    public GameObject m_GameOver;
 
     // Use this for initialization
     void Start () {
@@ -66,6 +67,30 @@ public class PlayerMovementy : OrbitSun
             futurePosition.y += getYPosition(t + i * m_LineTStep * tMulti) + playerMovementHistory.y;
             futurePosition.z += 0.01f;
             m_LineRenderer.SetPosition(i, futurePosition);
+        }
+    }
+
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        OnCollision(collision);
+    }
+    public void OnCollisionExit(Collision collision)
+    {
+        OnCollision(collision);
+    }
+    public void OnCollisionStay(Collision collision)
+    {
+        OnCollision(collision);
+    }
+
+    private void OnCollision(Collision collision)
+    {
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.tag.Equals("Sun"))
+        {
+            PauseManager.getInstance().EndGame();
+            m_GameOver.SetActive(true);
         }
     }
 }

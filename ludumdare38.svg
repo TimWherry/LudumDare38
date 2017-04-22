@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
@@ -17,7 +18,31 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="ludumdare38.svg">
   <defs
-     id="defs4" />
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4517">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop4519" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop4521" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4517"
+       id="radialGradient4523"
+       cx="-88.388344"
+       cy="1876.1416"
+       fx="-88.388344"
+       fy="1876.1416"
+       r="68.589355"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.73195876,0,0,0.73195876,-27.93436,508.54016)" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,9 +50,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="-1082.0092"
-     inkscape:cy="-156.6509"
+     inkscape:zoom="0.25000001"
+     inkscape:cx="-1026.9225"
+     inkscape:cy="-3809.3311"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -53,6 +78,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.27630675;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="rect4525"
+       width="220.61731"
+       height="209.3036"
+       x="-200.81831"
+       y="1770.7826" />
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#225500;fill-opacity:1;fill-rule:nonzero;stroke:#782121;stroke-width:1.1818881;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path4435"
@@ -545,5 +577,192 @@
        inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\right.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
+    <circle
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:url(#radialGradient4523);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.27630675;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path4507"
+       cx="-92.630981"
+       cy="1881.7983"
+       r="50.204578"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\star.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1530.179,3241.5647 -333.7544,110.3087 19.799,288.4995 209.3036,118.7939 206.4752,-107.4802 8.4853,-161.2203 -246.0732,-11.3137 0,79.1959 155.5635,8.4853 -132.936,107.4802 -144.2498,-178.1909 101.8233,-147.0782 206.4752,-39.598 z"
+       id="path4527"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\gameover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1301.0771,3272.6771 -79.1953,435.5782 124.4511,-132.9356 25.4551,124.4492 93.3379,5.6582 -164.0488,-432.75 z m 5.6582,152.7364 31.1113,84.8515 -33.9395,11.3145 2.8282,-96.166 z"
+       id="path4529"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\gameover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1080.4591,3679.9709 25.4559,-390.3229 104.65168,206.4751 135.76453,-226.2741 59.39697,412.9503 -84.85282,-8.4853 -16.97058,-181.0193 -93.3381,104.6518 -76.36748,-104.6518 -11.3137,195.1615 z"
+       id="path4533"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\gameover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -673.16564,3275.5058 -28.28427,381.8377 240.4163,2.8284 14.14213,-104.6518 -175.36247,-5.6569 8.48528,-98.9949 115.96551,8.4853 16.97056,-73.5391 -90.50967,0 -2.82842,-50.9117 115.96551,-11.3137 8.48528,-90.5097 z"
+       id="path4535"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\gameover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1470.7822,3767.6517 -121.6231,206.4747 104.6524,186.6777 132.9355,-206.4766 -115.9648,-186.6758 z m -8.4844,115.9668 53.7403,70.709 -22.629,67.8828 -33.9414,48.084 -28.2832,-115.9668 31.1133,-70.709 z"
+       id="path4537"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\gameover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1272.7921,3798.7648 130.1076,381.8377 155.56348,-381.8377 -164.04868,195.1615 z"
+       id="path4539"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\gameover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -905.09662,3841.1912 -2.8285,370.524 217.78892,-5.6569 -144.24978,-84.8528 0,-56.5685 130.10764,-22.6275 -2.82842,-48.0832 -132.93608,8.4853 5.65686,-65.0539 107.48023,-48.0832 14.14213,-53.7401 z"
+       id="path4541"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\gameover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -610.94048,3846.849 14.14258,384.666 70.71093,-2.8301 5.65625,-101.8222 31.11328,0 62.22461,96.166 33.94141,-53.7402 -93.33789,-113.1368 135.76367,-135.7636 -147.07812,-70.711 -113.13672,-2.8281 z m 65.05469,67.8809 73.53906,5.6582 8.48437,42.4258 -79.19531,36.7695 -2.82812,-84.8535 z"
+       id="path4543"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\gameover.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#cccccc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.27630675;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="rect4554"
+       width="1880"
+       height="1248"
+       x="-2024"
+       y="4392.3618" />
+    <g
+       id="g4588"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\title.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4556"
+         d="m 247.99995,4232.3621 -267.999903,168 183.999903,140 124,-4 64,116 -335.999903,84 68,60 347.999903,-96 -96,-212 -247.999903,-72 z"
+         style="fill:#2ca02c;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4558"
+         d="m 499.99995,4720.3621 40,-408 80,164 92,-156 20,420 -72,-176 -40,52 -36,-68 z"
+         style="fill:#2ca02c;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4560"
+         d="m 771.99995,4692.3621 40,-332 84.00003,352 -68.00003,-108 z"
+         style="fill:#2ca02c;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4562"
+         d="m 959.99998,4360.3621 -28,344 184.00002,-8 8,-64 -132.00002,12 8,-304 z"
+         style="fill:#2ca02c;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4564"
+         d="m 1064,4368.3621 -12,216 124,4 0,-76 -84,16 24,-148 z"
+         style="fill:#2ca02c;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4566"
+         d="m 1200,4360.3621 -4,344 88,-4 0,-80 -68,-4 4,-108 96,8 4,-68 -84,4 8,-52 60,0 -8,-48 z"
+         style="fill:#2ca02c;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4568"
+         d="m 1444,4292.3621 -112,232 120,100 -124,76 156,-4 24,-140 -120,-48 z"
+         style="fill:#2ca02c;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4570"
+         d="m 1496,4296.3621 -4,92 96,16 -16,276 68,-12 -8,-260 76,-24 -12,-100 z"
+         style="fill:#2ca02c;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4572"
+         d="m 168.00005,4864.3621 84,392 103.9999,-172 64,152 112,-396 -140,200 -20,-88 -80,100 z"
+         style="fill:#0066ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4574"
+         d="m 731.99995,4864.3613 -152,144 0,68 132,100 80,-164 -60,-148 z m -36,100 36,40 0,40 -40,48 -68,-48 72,-80 z"
+         style="fill:#0066ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4578"
+         d="m 815.99995,5168.3621 -4,-316 120,112 -76,80 40,72 0,56 -36,0 -20,-56 z"
+         style="fill:#0066ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4580"
+         d="m 1015.9999,4856.3621 -31.99995,332 204.00005,-40 -4,-116 -124,64 z"
+         style="fill:#0066ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4582"
+         d="m 1239.9999,4864.3613 0,284 180,-44 0,-96 -76,-108 -104,-36 z m 52,104 64,40 0,40 -52,8 -12,-88 z"
+         style="fill:#0066ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4620"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\win.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4603"
+         d="m -3507.9999,4384.3621 171.9999,232 48,240 44,-244 140,-236 -184,152 z"
+         style="fill:#00d400;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4605"
+         d="m -2908,4428.3613 -148,152 -8,116 116,136 124,-144 -16,-112 -68,-148 z m -12,100 20,136 -36,72 -32,-120 48,-88 z"
+         style="fill:#00d400;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4609"
+         d="m -2736,4432.3621 8,240 64,104 156.0001,0 80,-108 -12,-244 -108,212 -92,12 z"
+         style="fill:#00d400;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4613"
+         d="m -3228,4932.3621 52,280 124,-116 88,144 112,-304 -148,160 -48,-84 -64,64 z"
+         style="fill:#00d400;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4615"
+         d="m -2768,4924.3621 -24,300 156.0001,-8 -24.0001,-288 z"
+         style="fill:#00d400;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4617"
+         d="m -2539.9999,5184.3621 c -4,-24 4,-288 4,-288 l 160,200 68,-220 4,308 -96,-12 -100,-152 z"
+         style="fill:#00d400;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
   </g>
 </svg>
