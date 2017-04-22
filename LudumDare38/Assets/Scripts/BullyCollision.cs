@@ -22,6 +22,7 @@ public class BullyCollision : MonoBehaviour
                 SphereCollider otherCollider = (SphereCollider)c;
                 float distanceApart = Vector3.Distance(c.gameObject.transform.position, transform.position);
                 float overlap = distanceApart - sphereCollider.radius - otherCollider.radius;
+                Debug.Log(overlap);
                 c.gameObject.transform.position += (transform.position - c.gameObject.transform.position).normalized * overlap;
             }
         }

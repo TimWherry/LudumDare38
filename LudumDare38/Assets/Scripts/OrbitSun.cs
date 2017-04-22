@@ -12,7 +12,8 @@ public class OrbitSun : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        t = Random.Range(0.0f, Mathf.PI * 2.0f);
+        tMulti = Random.Range(0.7f, 1.3f);
     }
 
     // Update is called once per frame

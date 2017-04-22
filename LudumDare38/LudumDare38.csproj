@@ -77,10 +77,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Animation.cs" />
     <Compile Include="Assets\Scripts\BullyCollision.cs" />
+    <Compile Include="Assets\Scripts\MeteorMovement.cs" />
     <Compile Include="Assets\Scripts\OrbitSun.cs" />
     <Compile Include="Assets\Scripts\PlayerMovementy.cs" />
     <Compile Include="Assets\Scripts\PlayerResources.cs" />
     <Compile Include="Assets\Scripts\Resource.cs" />
+    <Compile Include="Assets\Scripts\SpawnMeteors.cs" />
     <Compile Include="Assets\Scripts\SpawnResources.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="278.17271"
-     inkscape:cy="-700.04683"
+     inkscape:zoom="2.8284272"
+     inkscape:cx="-228.41577"
+     inkscape:cy="-450.95144"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,6 +53,15 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <path
+       sodipodi:nodetypes="ccccccccccccccccccc"
+       inkscape:connector-curvature="0"
+       id="path4350"
+       d="m -108.51547,1454.7213 c -4.81535,-5.6456 -1.97779,1.5849 -7.32684,0.1387 -5.8799,-0.7134 -8.22349,7.5053 -13.45745,8.9069 -3.20925,2.7275 -12.24009,1.8774 -15.64538,3.9582 -1.21454,4.2898 -2.65927,8.9344 -7.51238,11.1099 -4.36314,4.1863 9.26996,8.1799 6.96654,13.0259 -3.29833,3.8049 2.29208,9.5868 6.74216,14.1819 2.96438,3.4751 11.22849,4.6071 9.66838,10.1918 -1.69808,9.98 5.16354,10.2565 10.87952,18.7585 3.90636,5.3986 -6.98602,10.168 -0.47797,11.4434 -5.63128,5.5476 -6.34846,17.6697 -0.67757,17.9927 5.94575,-0.382 13.9603,-10.3892 10.82296,-16.3067 -2.77644,-4.0431 0.89977,-7.9801 3.02977,-14.3867 2.29351,-5.3054 3.99598,-12.6678 5.550122,-18.4275 3.40765,-5.176 2.40969,-10.7791 8.06927,-14.3122 4.06,-4.4463 6.07371,-12.3453 5.33518,-17.4529 -0.16971,-4.7385 -2.81553,-13.6732 -6.9111,-16.895 -3.7438,-4.079 -4.60811,-7.5803 -4.63041,-13.1744 -1.58347,-3.3002 -6.937892,1.5664 -10.424802,1.2475 z"
+       style="fill:#ff7f2a;fill-rule:evenodd;stroke:#ffff00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\meteor2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;"
@@ -273,6 +282,50 @@
        id="circle4739"
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffdd55;fill-opacity:1;fill-rule:evenodd;stroke:#a0892c;stroke-width:1.82922769px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\circle4739.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff7f2a;fill-rule:evenodd;stroke:#ffff00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -215.24413,1449.9076 c -4.6479,-5.7843 -9.76962,3.7613 -15.07401,2.159 -5.85649,-0.8853 -10.34511,3.454 -15.61787,4.7017 -3.28778,2.6323 -6.44546,4.9956 -9.91023,6.9758 -1.33968,4.2523 -1.1603,9.0226 -6.07505,11.055 -4.4839,4.0567 3.32774,8.6076 0.88336,13.3841 -3.40837,3.7066 -6.6036,9.1014 -2.29003,13.8249 2.86132,3.5604 19.70259,5.4824 17.97957,11.019 -1.9897,9.926 -5.66877,13.506 -0.20428,22.1718 3.74655,5.5107 3.20015,17.6497 9.66805,19.1152 5.51222,0.1502 2.33713,6.0755 7.99613,6.5644 5.95438,-0.2077 14.36276,-12.5232 11.40011,-18.53 -2.65682,-4.1227 -8.12282,-4.7957 -5.80607,-11.1372 2.44793,-5.2359 4.36533,-12.5452 6.08751,-18.2569 3.55782,-5.074 11.82419,-10.0376 17.58482,-13.4033 4.18851,-4.3255 2.32358,-10.0729 1.73498,-15.2 -0.0308,-4.7414 0.0954,-10.3104 -3.90403,-13.6507 -3.62271,-4.1869 -5.9736,-9.6417 -5.83203,-15.2341 -1.48611,-3.3452 -5.14485,-5.1378 -8.62093,-5.5587 z"
+       id="path4327"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccccc"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\meteor.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#803300;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.30467534;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m -218.31062,1502.4284 a 23.5,23.5 0 0 0 4.13883,-3.4664 c -2.29292,-7.2215 0.8594,-12.3601 6.51302,-16.9 a 23.5,23.5 0 0 0 -3.75792,-12.1447 23.5,23.5 0 0 0 -2.49289,-3.1574 c -0.43531,-0.2453 -0.88137,-0.5409 -1.34327,-0.9088 -0.26278,-0.2093 -0.83623,-0.9213 -1.45119,-1.6517 a 23.5,23.5 0 0 0 -26.39015,-1.6854 c -0.89176,4.3738 4.71565,8.8822 2.39498,9.1451 -3.18398,0.3607 -6.85203,-0.2861 -10.54959,-1.0017 a 23.5,23.5 0 0 0 -0.76502,22.789 c 3.87373,0.879 6.75164,4.1799 7.22489,8.3651 a 23.5,23.5 0 0 0 26.47831,0.6169 z"
+       id="path4208"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\meteor.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#803300;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.30467534;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path4238"
+       cx="1270.7219"
+       cy="-799.10199"
+       rx="9.5"
+       ry="5.5"
+       transform="matrix(-0.65480124,0.75580112,-0.75580112,-0.65480124,0,0)"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\meteor.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#803300;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.30467534;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m -234.55802,1490.8145 c -1.68573,-1.6465 -5.28979,-0.6936 -5.7975,1.2923"
+       id="path4242"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\meteor.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#803300;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.30467534;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m -222.43955,1476.287 c -0.10917,-1.662 -2.20867,-3.3901 -0.85585,-4.9516"
+       id="path4301"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="G:\Dev\LudumDare38\LudumDare38\Assets\Art\meteor.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>
