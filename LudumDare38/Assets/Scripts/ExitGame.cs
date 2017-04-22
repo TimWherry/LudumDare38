@@ -23,8 +23,11 @@ public class ExitGame : MonoBehaviour
         if(areBulliesDead())
         {
             // WIN GAME
-            m_WinScreen.SetActive(true);
-            PauseManager.getInstance().EndGame();
+            if (m_WinScreen != null)
+            {
+                m_WinScreen.SetActive(true);
+                PauseManager.getInstance().EndGame();
+            }
         }
     }
 

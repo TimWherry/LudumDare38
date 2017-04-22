@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OrbitSun : Pausable
 {
+    public GameObject m_ParticleTail;
     public GameObject m_CenterObject;
     public float m_OrbitSize = 5.0f;
     protected float t = 0.0f;
@@ -30,6 +31,10 @@ public class OrbitSun : Pausable
             transform.Translate(-transform.position);
 
             transform.Translate(new Vector3(getXPosition(t), getYPosition(t)));
+            if(m_ParticleTail != null)
+            {
+                m_ParticleTail.transform.localRotation = Quaternion.AngleAxis(t * Mathf.Rad2Deg, Vector3.forward) * Quaternion.AngleAxis(180.0f, Vector3.right);
+            }
         }
     }
 
