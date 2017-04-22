@@ -18,6 +18,7 @@ public class PlayerMovementy : OrbitSun
         base.Update();
         Vector3 playerMovement = new Vector3();
 
+        tMulti -= 0.05f;
         if (Input.GetKey(KeyCode.A))
         {
             playerMovement.x -= m_PlayerMovementPower;
@@ -34,6 +35,12 @@ public class PlayerMovementy : OrbitSun
         {
             playerMovement.y -= m_PlayerMovementPower;
         }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            tMulti += 0.1f;
+        }
+        tMulti = Mathf.Clamp(tMulti, 1.0f, 2.0f);
+
 
         playerMovementHistory += playerMovement;
         playerMovementHistory.x = Mathf.Clamp(playerMovementHistory.x, -m_PlayerMovementMax, m_PlayerMovementMax);

@@ -35,5 +35,6 @@ public class SpawnResources : MonoBehaviour
     {
         GameObject newResource = GameObject.Instantiate(m_ResourcePrefab, transform.position, Quaternion.identity);
         // send it in random direction
+        newResource.GetComponent<Resource>().rollRandomDirection();
     }
 }

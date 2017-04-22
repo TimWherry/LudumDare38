@@ -7,6 +7,7 @@ public class OrbitSun : MonoBehaviour
     public GameObject m_CenterObject;
     public float m_OrbitSize = 5.0f;//sure thats good
     private float t = 0.0f;
+    protected float tMulti = 1.0f;
 
     // Use this for initialization
     void Start()
@@ -17,7 +18,7 @@ public class OrbitSun : MonoBehaviour
     // Update is called once per frame
     protected void Update()
     {
-        t += Time.deltaTime;
+        t += Time.deltaTime * tMulti;
         if(t >= Mathf.PI * 2.0f)
         {
             t = 0.0f;
