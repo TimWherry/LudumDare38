@@ -39,6 +39,6 @@ public class PlayerMovementy : OrbitSun
         playerMovementHistory.x = Mathf.Clamp(playerMovementHistory.x, -m_PlayerMovementMax, m_PlayerMovementMax);
         playerMovementHistory.y = Mathf.Clamp(playerMovementHistory.y, -m_PlayerMovementMax, m_PlayerMovementMax);
 
-        transform.position += playerMovementHistory;
+        transform.Translate(playerMovementHistory);
     }
 }

@@ -23,7 +23,8 @@ public class OrbitSun : MonoBehaviour
             t = 0.0f;
         }
 
-        transform.position = m_CenterObject.transform.position
-            + new Vector3(m_OrbitSize * Mathf.Cos(t), 0.5f * m_OrbitSize * Mathf.Sin(t));
+        transform.Translate(-transform.position);
+
+        transform.Translate(new Vector3(m_OrbitSize * Mathf.Cos(t), 0.5f * m_OrbitSize * Mathf.Sin(t)));
     }
 }
