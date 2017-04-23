@@ -9,6 +9,7 @@ public class PauseManager : MonoBehaviour
     private static PauseManager m_Instance = null;
 
     private bool gameEnded = false;
+    public float m_FinishTimer = 2.5f;
 
     public static PauseManager getInstance()
     {
@@ -72,9 +73,13 @@ public class PauseManager : MonoBehaviour
     {
         if(gameEnded)
         {
-            if(Input.anyKey)
+            m_FinishTimer -= Time.deltaTime;
+            if (m_FinishTimer <= 0.0f)
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
+                if (Input.anyKey)
+                {
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("menu");
+                }
             }
         }
     }

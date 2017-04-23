@@ -26,19 +26,19 @@ public class PlayerMovementy : OrbitSun
             Vector3 playerMovement = new Vector3();
 
             tMulti -= 0.05f;
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 playerMovement.x -= m_PlayerMovementPower;
             }
-            if (Input.GetKey(KeyCode.D))
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
                 playerMovement.x += m_PlayerMovementPower;
             }
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
                 playerMovement.y += m_PlayerMovementPower;
             }
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
             {
                 playerMovement.y -= m_PlayerMovementPower;
             }
