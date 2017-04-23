@@ -5,12 +5,16 @@ using UnityEngine;
 public class MeteorMovement : Pausable
 {
     public GameObject m_ParticleSystem;
+    public AudioClip m_ImpactSound;
     public float m_LifeTime = 7.5f;
     public float m_MinSpeed = 4.5f;
     public float m_MaxSpeed = 6.5f;
+
+    private new AudioSource audio;
     // Use this for initialization
     void Start()
     {
+        audio = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -39,7 +43,6 @@ public class MeteorMovement : Pausable
             {
                 collision.gameObject.GetComponent<PlayerResources>().removeResources(Resource.eResource.Water, 2);
                 collision.gameObject.GetComponent<PlayerResources>().removeResources(Resource.eResource.Soil, 2);
-                HitWorld(collision.contacts[0].normal);
             }
             else if (collision.gameObject.tag.Equals("Resource"))
             {
